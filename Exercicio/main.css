@@ -88,3 +88,10 @@ ul li a{
 #titulo-lista-de-tarefas {
     margin-bottom: 20px;
 }
+.riscado {    
+    text-decoration: line-through  
+}
+
+ul div p {
+    cursor: pointer;
+}

@@ -11,14 +11,16 @@ $(document).ready(function(){
         const novoItem = $('<li id="${posicao}"></li>');
 
 
-        $(`<a href="">${novaTarefa}</a>`).appendTo(novoItem);
+        $(`<div class="task-item"><p>${novaTarefa}</p></div>`).appendTo(novoItem);
         $(novoItem).appendTo('ul');
         $('#nome-tarefa').val('');
     });
 
-    $('ul li a').on('submit', function(e){
-        e.preventDefault();
-    })
+    $('ul').on('click','li',function(){    
+
+        $(this).toggleClass('riscado');
+
+  })
 
     
 });
